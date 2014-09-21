@@ -1,0 +1,45 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="variables_set" id="39" inline="true" x="-22" y="-56">
+    <field name="VAR">i</field>
+    <value name="VALUE">
+      <block type="procedures_callreturn" id="40" inline="false">
+        <mutation name="add">
+          <arg name="x"></arg>
+          <arg name="y"></arg>
+        </mutation>
+        <value name="ARG0">
+          <block type="math_number" id="46">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="math_number" id="41">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="42" inline="false" x="-12" y="42">
+    <mutation>
+      <arg name="x"></arg>
+      <arg name="y"></arg>
+    </mutation>
+    <field name="NAME">add</field>
+    <value name="RETURN">
+      <block type="math_arithmetic" id="43" inline="true">
+        <field name="OP">ADD</field>
+        <value name="A">
+          <block type="variables_get" id="44">
+            <field name="VAR">x</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="variables_get" id="45">
+            <field name="VAR">y</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>
